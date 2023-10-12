@@ -1,5 +1,5 @@
 # Daytree
-Uses Stable Diffusion to slowly grow a tree, day by day[^*].
+Uses Stable Diffusion to slowly grow a tree, day by day[^*] (and then automatically set as a desktop background).
 
 ## Today's Tree:
 ![Today's Tree](https://github.com/Yerren/Daytree/blob/main/output_imgs/desktop_img.bmp?raw=true)
