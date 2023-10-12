@@ -1,7 +1,7 @@
 # Daytree
 Uses Stable Diffusion to slowly grow a tree, day by day[^1] (and then automatically set as a desktop background).
 
-The tree slowly grows over time (using ControlNet), and adapts to the current (real-world) season. All StableDiffusion generation is done through the use of the Automatic1111[^2] API. More stable generations could be achieved by using a fixed seed (as well as skipping step 2 in the process outlined below). However, this project prioritises creating exciting images instead.
+The tree slowly grows over time (using ControlNet), and adapts to the current (real-world) season. More stable generations could be achieved by using a fixed seed (as well as skipping step 2 in the process outlined below). However, this project prioritises creating exciting images instead. All StableDiffusion generation is done through the use of the Automatic1111[^2] API. 
 
 
 ## Today's Tree:
