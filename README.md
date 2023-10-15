@@ -14,5 +14,9 @@ Previous trees can be seen in the output_imgs folder.
 3) Use R-ESRGAN 4x+ to upscale to 2k.
 4) Apply a blurring and dimming to the left and right sides of the image (which, from step 2, are usually just vague lines of colour).
 
+_TODO: Add image links to each step of the process once they have been commited_
+
+_TODO: Add animaged gif of story so far_
+
 [^1]: Provided that the workstation isn't fully utilized that day.
 [^2]: https://github.com/AUTOMATIC1111/stable-diffusion-webui
