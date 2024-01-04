@@ -87,6 +87,16 @@ def final_image_processing(img_name, img_path):
         pre_blur_img.save(f"{img_path}/blur_{img_name}.bmp", "BMP")
         pre_blur_img.save(f"{img_path}/desktop_img.bmp", "BMP")
 
+        # Save "story so far" gif
+        if not os.path.isfile("output_imgs/story_so_far.gif"):
+            # First time: just save a single image
+            pre_blur_img.save(fp="output_imgs/story_so_far.gif", format='GIF', save_all=True, duration=200, loop=0)
+        else:
+            # Add to existing gif
+            gif = Image.open("output_imgs/story_so_far.gif")
+            gif.save(fp="output_imgs/story_so_far.gif", format='GIF', append_images=[pre_blur_img],
+                     save_all=True, duration=200, loop=0)
+            
 
 def draw_tree(bg_img_name, fg_img_name, trunk_fill):
     """

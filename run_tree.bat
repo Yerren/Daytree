@@ -11,4 +11,8 @@ If %MY_VAR% == 0 (
 	call ..\sd_env\Scripts\activate.bat
 	python draw_tree.py
 	wmic process where "commandline like '%%webui%%'" delete
+	git add output_imgs\*
+	git add controlnet_img_sketch.png
+	git commit -m "Post Generation Commit."
+	git push -u origin main
 )
