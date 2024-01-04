@@ -16,9 +16,7 @@ Previous trees can be seen in the output_imgs folder.
 5) Use R-ESRGAN 4x+ to upscale to 2k.\
    <img src="https://github.com/Yerren/Daytree/blob/main/output_imgs/2k_output_latest.png?raw=true" height="300" /> 
 7) Apply a blurring and dimming to the left and right sides of the image (which, from step 2, are usually just vague lines of colour).\
-   <img src="https://github.com/Yerren/Daytree/blob/main/output_imgs/blur_latest.bmp?raw=true" height="300" /> 
-
-_TODO: Add animaged gif of the "story so far"_
+   <img src="https://github.com/Yerren/Daytree/blob/main/output_imgs/blur_latest.bmp?raw=true" height="300" />
 
 [^1]: Provided that the workstation isn't fully utilized that day.
 [^2]: https://github.com/AUTOMATIC1111/stable-diffusion-webui
