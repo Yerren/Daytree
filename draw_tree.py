@@ -323,6 +323,7 @@ try:
     img_out = r['images'][0]
     image = Image.open(io.BytesIO(base64.b64decode(img_out.split(",",1)[0])))
     image.save(f'output_imgs/output_{im_number:03d}.png')
+    image.save(f'output_imgs/output_latest.png')
 
     # img2img "upscale"
     payload_upscale = {
@@ -348,6 +349,7 @@ try:
     img_out = r['images'][0]
     image = Image.open(io.BytesIO(base64.b64decode(img_out.split(",",1)[0])))
     image.save(f'output_imgs/lrg_output_{im_number:03d}.png')
+    image.save(f'output_imgs/lrg_output_latest.png')
 
     # actual upscale
     payload_resize = {
@@ -366,9 +368,11 @@ try:
     img_out = r['image']
     image = Image.open(io.BytesIO(base64.b64decode(img_out.split(",", 1)[0])))
     image.save(f'output_imgs/2k_output_{im_number:03d}.png')
+    image.save(f'output_imgs/2k_output_latest.png')
 
     print("Final image post-processing...")
     final_image_processing(f"2k_output_{im_number:03d}", "output_imgs")
+    final_image_processing(f"2k_output_latest", "output_imgs")
 
     with open("datafile.txt", "w") as datafile:
         """
